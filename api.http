@@ -1,0 +1,8 @@
+GET http://127.0.0.1:8080 HTTP/1.1
+
+###
+
+POST http://127.0.0.1:8080/api/auth/login HTTP/1.1
+
+###
+POST http://127.0.0.1:8080/api/auth/register HTTP/1.1
