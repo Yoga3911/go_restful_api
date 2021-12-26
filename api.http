@@ -6,8 +6,8 @@ POST http://127.0.0.1:8080/api/auth/login HTTP/1.1
 Content-Type: application/json
 
 {
-    "email": "eko21@gmail.com",
-    "password": "yyo"
+    "email": "yoo12312o@gmail.com",
+    "password": "12345"
 }
 ###
 POST http://127.0.0.1:8080/api/auth/register HTTP/1.1
@@ -18,3 +18,19 @@ Content-Type: application/json
     "email": "eko21@gmail.c",
     "password": "yyo"
 }
+
+###
+PUT http://127.0.0.1:8080/api/user/profile HTTP/1.1
+Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNSIsImV4cCI6MTY3MjA1NTY4NiwiaWF0IjoxNjQwNTE5Njg2LCJpc3MiOiJ5ZGhud2IifQ.Vk0-5FurQqFa_GiapR2NeKbJG1zQkp7AZXmwRcWQh2o
+
+{
+    "name": "Su123",
+    "email": "yoo12312o@gmail.com",
+    "password": "12345"
+}
+
+###
+GET http://127.0.0.1:8080/api/user/profile HTTP/1.1
+Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNSIsImV4cCI6MTY3MjA1NDEyNCwiaWF0IjoxNjQwNTE4MTI0LCJpc3MiOiJ5ZGhud2IifQ.tt6jkgGfQFrrvtmURTi25v8INXUmn2-1j28-aX8Pfws
