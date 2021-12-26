@@ -2,6 +2,7 @@ package config
 
 import (
 	"os"
+	"pkg/coba/entity"
 
 	"github.com/joho/godotenv"
 	"gorm.io/driver/mysql"
@@ -26,7 +27,7 @@ func DatabaseConnection() *gorm.DB {
 	if err != nil {
 		panic("Koneksi ke database gagal")
 	}
-
+	db.AutoMigrate(&entity.Book{}, &entity.User{})
 	return db
 }
 
