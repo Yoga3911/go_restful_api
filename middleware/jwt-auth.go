@@ -3,13 +3,11 @@ package middleware
 import (
 	"log"
 	"net/http"
-	"pkg/coba/entity"
 	"pkg/coba/helper"
 	"pkg/coba/service"
 
 	"github.com/dgrijalva/jwt-go"
 	"github.com/gin-gonic/gin"
-	"golang.org/x/crypto/nacl/auth"
 )
 
 // AutthorizeJWT validates the token user given, return 401 if not valid
