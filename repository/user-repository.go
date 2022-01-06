@@ -2,7 +2,7 @@ package repository
 
 import (
 	"log"
-	"pkg/coba/entity"
+	"rest/entity"
 
 	"golang.org/x/crypto/bcrypt"
 	"gorm.io/gorm"

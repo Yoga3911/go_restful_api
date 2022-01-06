@@ -1,11 +1,11 @@
 package main
 
 import (
-	"pkg/coba/config"
-	"pkg/coba/controller"
-	"pkg/coba/middleware"
-	"pkg/coba/repository"
-	"pkg/coba/service"
+	"rest/config"
+	"rest/controller"
+	"rest/middleware"
+	"rest/repository"
+	"rest/service"
 
 	"github.com/gin-gonic/gin"
 	"gorm.io/gorm"

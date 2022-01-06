@@ -3,9 +3,9 @@ package controller
 import (
 	"fmt"
 	"net/http"
-	"pkg/coba/dto"
-	"pkg/coba/helper"
-	"pkg/coba/service"
+	"rest/dto"
+	"rest/helper"
+	"rest/service"
 	"strconv"
 
 	"github.com/dgrijalva/jwt-go"
@@ -19,14 +19,14 @@ type UserController interface {
 
 type userController struct {
 	userService service.UserService
-	jwtService service.JWTService
+	jwtService  service.JWTService
 }
 
 // NewUserController is createing a new instance pf UserController
 func NewUserController(userService service.UserService, jwtService service.JWTService) UserController {
-	return &userController {
+	return &userController{
 		userService: userService,
-		jwtService: jwtService,
+		jwtService:  jwtService,
 	}
 }
 
@@ -41,7 +41,7 @@ func (c *userController) Update(context *gin.Context) {
 
 	autHeader := context.GetHeader("Authorization")
 	token, errToken := c.jwtService.ValidateToken(autHeader)
-	if errToken != nil{
+	if errToken != nil {
 		panic(errToken.Error())
 	}
 

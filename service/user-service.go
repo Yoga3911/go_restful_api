@@ -2,9 +2,9 @@ package service
 
 import (
 	"log"
-	"pkg/coba/dto"
-	"pkg/coba/entity"
-	"pkg/coba/repository"
+	"rest/dto"
+	"rest/entity"
+	"rest/repository"
 
 	"github.com/mashingan/smapping"
 )

@@ -2,10 +2,10 @@ package controller
 
 import (
 	"net/http"
-	"pkg/coba/dto"
-	"pkg/coba/entity"
-	"pkg/coba/helper"
-	"pkg/coba/service"
+	"rest/dto"
+	"rest/entity"
+	"rest/helper"
+	"rest/service"
 	"strconv"
 
 	"github.com/gin-gonic/gin"

@@ -3,8 +3,8 @@ package middleware
 import (
 	"log"
 	"net/http"
-	"pkg/coba/helper"
-	"pkg/coba/service"
+	"rest/helper"
+	"rest/service"
 
 	"github.com/dgrijalva/jwt-go"
 	"github.com/gin-gonic/gin"

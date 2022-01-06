@@ -2,7 +2,7 @@ package config
 
 import (
 	"os"
-	"pkg/coba/entity"
+	"rest/entity"
 
 	"github.com/joho/godotenv"
 	"gorm.io/driver/mysql"
@@ -21,7 +21,7 @@ func DatabaseConnection() *gorm.DB {
 	dbPass := os.Getenv("DB_PASSWORD")
 	dbName := os.Getenv("DB_NAME")
 
-	dsn := dbUser + ":" + dbPass + "@tcp(" + dbHost + ":3306)/" + dbName + "?charset=utf8mb4&parseTime=True&loc=Local" 
+	dsn := dbUser + ":" + dbPass + "@tcp(" + dbHost + ":3306)/" + dbName + "?charset=utf8mb4&parseTime=True&loc=Local"
 	db, err := gorm.Open(mysql.Open(dsn), &gorm.Config{})
 
 	if err != nil {
